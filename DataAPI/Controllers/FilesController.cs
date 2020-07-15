@@ -11,7 +11,7 @@ namespace DataAPI.Controllers
 {
     [Route("data/v1/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize("Role="")]
     public class FilesController : ControllerBase
     {
         private readonly FileContext _context;
