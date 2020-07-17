@@ -1,4 +1,4 @@
-# Managed Service Authenitcation 
+# Managed Service Authentication 
 
 
 This POC consists of two services. 
