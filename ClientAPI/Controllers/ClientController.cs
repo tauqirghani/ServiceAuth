@@ -58,6 +58,7 @@ namespace ClientAPI.Controllers
                     File file = JsonConvert.DeserializeObject<File>(responseContent);
                     return Ok(file);
                 }
+                _logger.LogInformation("==>Return Status " + response.StatusCode );
                 return NotFound();
 
             }
