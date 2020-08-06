@@ -41,9 +41,16 @@ namespace DataAPI
                         {
                             settings.Authority
                         }
-                        
+                        //,
+                        //ValidIssuers = new []
+                        //{
+                        //    "https://sts.windows.net/4cc65fd6-9c76-4871-a542-eb12a5a7800c/", 
+                        //    "https://firstam.onmicrosoft.com/4cc65fd6-9c76-4871-a542-eb12a5a7800c/" 
+                        //}
+
                     };
                 });
+            services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_INSTRUMENTATIONKEY"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
